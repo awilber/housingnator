@@ -1,0 +1,157 @@
+name: Epic
+description: Create an epic for large features or initiatives
+title: "[EPIC] "
+labels: ["epic", "needs-planning"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Epics** are large features or initiatives that require multiple user stories/issues to complete. 
+        Use this template to plan major features or capabilities.
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: Epic Overview
+      description: High-level description of this epic
+      placeholder: Provide a comprehensive overview of what this epic aims to achieve...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: epic-type
+    attributes:
+      label: Epic Type
+      description: What type of epic is this?
+      options:
+        - New Feature Set
+        - Platform Enhancement
+        - Performance Initiative
+        - Security Enhancement
+        - User Experience Overhaul
+        - Integration Project
+        - Technical Debt Reduction
+        - Infrastructure Improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value
+      description: Why is this epic important? What business value does it provide?
+      placeholder: |
+        - User benefit: How does this help our users?
+        - Business impact: What's the expected impact on key metrics?
+        - Strategic alignment: How does this align with our goals?
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will we know this epic is successful?
+      placeholder: |
+        - [ ] Measurable outcome 1
+        - [ ] Measurable outcome 2
+        - [ ] User acceptance criteria
+        - [ ] Performance metrics
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-stories
+    attributes:
+      label: User Stories / Sub-Issues
+      description: List the user stories or issues that make up this epic
+      placeholder: |
+        - [ ] #[issue-number] - User story 1
+        - [ ] #[issue-number] - User story 2
+        - [ ] As a [user], I want [goal] so that [benefit]
+        - [ ] Technical task: [description]
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What's the priority of this epic?
+      options:
+        - P0 - Critical (Must have)
+        - P1 - High (Should have)
+        - P2 - Medium (Could have)
+        - P3 - Low (Nice to have)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: size
+    attributes:
+      label: Epic Size
+      description: Estimated size of this epic
+      options:
+        - XS (1 sprint)
+        - S (2-3 sprints)
+        - M (4-6 sprints)
+        - L (7-12 sprints)
+        - XL (3+ months)
+    validations:
+      required: true
+
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: Stakeholders
+      description: Who are the key stakeholders for this epic?
+      placeholder: |
+        - Product Owner: [name]
+        - Engineering Lead: [name]
+        - Design Lead: [name]
+        - Other stakeholders: [names]
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What other epics, features, or external dependencies does this rely on?
+      placeholder: |
+        - Internal dependencies: [list other epics/features]
+        - External dependencies: [APIs, services, etc.]
+        - Blockers: [anything that must be completed first]
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Assumptions
+      description: What are the key risks and assumptions for this epic?
+      placeholder: |
+        **Risks:**
+        - Risk 1: [description and mitigation]
+        - Risk 2: [description and mitigation]
+        
+        **Assumptions:**
+        - Assumption 1: [description]
+        - Assumption 2: [description]
+
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: What criteria must be met for this epic to be considered complete?
+      placeholder: |
+        - [ ] All user stories completed
+        - [ ] Feature tested and QA approved
+        - [ ] Documentation updated
+        - [ ] Performance requirements met
+        - [ ] Security review completed
+        - [ ] Deployment successful
+        - [ ] User feedback positive
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Notes
+      description: Any other relevant information, links, or resources
+      placeholder: Links to design docs, research, prototypes, etc.

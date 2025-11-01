@@ -1,0 +1,113 @@
+name: Feature Request
+description: Suggest a new feature for HousingNator
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible to help us understand your request.
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature is this?
+      options:
+        - User Interface Enhancement
+        - Search & Filtering
+        - Property Management
+        - User Authentication
+        - API Enhancement
+        - Performance Improvement
+        - Integration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: Describe the problem or need this feature addresses...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: A clear and concise description of what you want to happen...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Describe any alternative solutions or features you've considered
+      placeholder: Any other approaches you've thought of...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my workflow
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: User Type
+      description: Who would benefit from this feature?
+      multiple: true
+      options:
+        - Renters/Tenants
+        - Property Owners/Landlords
+        - Property Managers
+        - Real Estate Agents
+        - Administrators
+        - All Users
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Provide specific use cases or scenarios where this feature would be helpful
+      placeholder: |
+        1. As a [user type], I want to [action] so that [benefit]
+        2. When [scenario], users should be able to [action]
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What would need to be true for this feature to be considered complete?
+      placeholder: |
+        - [ ] Criteria 1
+        - [ ] Criteria 2
+        - [ ] Criteria 3
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Examples
+      description: If applicable, add mockups, wireframes, or examples
+      placeholder: Drag and drop images here or describe the UI/UX
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, links, or resources about the feature request
+      placeholder: Any additional information that might be helpful...
